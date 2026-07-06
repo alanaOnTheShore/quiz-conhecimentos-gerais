@@ -1,3 +1,11 @@
+:root{
+    --fonte-cabecalho: #ffffff;
+    --fundo-cards: #faead6;
+    --bordas: #363232;
+    --bg:#B488E6;
+    --fonte-principal: #3f275b;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -9,7 +17,7 @@ body{
 .cabecalho {
     font-family: "Londrina Solid", sans-serif;
     font-size: 4em;
-    color: white;
+    color: var(--fonte-cabecalho);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     min-height: 40vh;
     display: flex;
@@ -18,41 +26,61 @@ body{
 }
 
 #iniciar.container{
-    height: 60vh;
+    height: 80vh;
     width: 40vw;
-    margin-bottom: 10px;
+    margin-bottom: 10px;    
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    border: 1px solid black;
-    border-radius: 10px;
-    background-color: antiquewhite;
-
+    justify-content: space-evenly;
+    border: 2px solid var(--bordas);
+    border-radius: 16px;
+    background-color: var(--fundo-cards);
 }
+
+#inputNomeTexto {
+    color: var(--fonte-principal);
+    text-align: center;    
+}
+@media (max-width: 768px) {
+  #inputNomeTexto {
+    padding: 40px;
+  }
+}
+
 .form-label{
     font-size: 2em;
+    font-family: "Andika", sans-serif;
     align-self: center;
     margin-bottom: auto;
 }
 
+.form-text{
+    text-align: center;
+}
+
 #btn-comecar{
-    color: antiquewhite;
+    color: var(--fundo-cards);
     font-size: 20px;
-    background-color: #B488E6;
-    border: 2px solid #B488E6;
+    background-color: var(--bg);
+    border: 2px solid var(--bg);
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 40px;
     width: 200px;
 }
 
-#perguntas{
+#btn-comecar:hover{
+    background-color: var(--fonte-principal);
+    border: 2px solid  var(--fonte-principal);
+}
+
+/* #perguntas{
     background-color: aqua;
 }
 
 #opcoes{
     background-color: blue;
-}
+} */
 
 .footer {
   text-align: center;
