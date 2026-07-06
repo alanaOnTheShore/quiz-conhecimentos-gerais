@@ -38,6 +38,12 @@ body{
     background-color: var(--fundo-cards);
 }
 
+#inputNome{
+    font-family: "Pompiere", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
 #inputNomeTexto {
     color: var(--fonte-principal);
     text-align: center;    
@@ -50,7 +56,8 @@ body{
 
 .form-label{
     font-size: 2em;
-    font-family: "Andika", sans-serif;
+    font-family: "Pompiere", sans-serif;
+    font-weight: bold;
     align-self: center;
     margin-bottom: auto;
 }
@@ -60,16 +67,20 @@ body{
 }
 
 #btn-comecar{
-    color: var(--fundo-cards);
-    font-size: 20px;
+    color: var(--fonte-principal);
+    font-size: 25px;
+    font-family: "Pompiere", sans-serif;
+    font-weight: bold;
     background-color: var(--bg);
-    border: 2px solid var(--bg);
+    border: 2px solid var(--fonte-principal);
     padding: 10px;
     border-radius: 40px;
     width: 200px;
+    height: 60px;
 }
 
 #btn-comecar:hover{
+    color: var(--fundo-cards);
     background-color: var(--fonte-principal);
     border: 2px solid  var(--fonte-principal);
 }
@@ -85,5 +96,5 @@ body{
 .footer {
   text-align: center;
   padding: 20px;
-  color: #f0edee;
+  color: var(--fonte-cabecalho);
 }
